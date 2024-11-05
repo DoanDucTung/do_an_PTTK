@@ -1,0 +1,63 @@
+Jun 27 01:01:18.799 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 27 01:01:18.800 HYPERVISOR: Started on IP = 192.168.226.1, TCP port = 64783.
+Jun 27 01:01:19.281 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 27 01:01:19.282 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\ADMIN\GNS3\do_an_PTTKHT\project-files\dynamips 
+Jun 27 01:01:19.282 GENERAL: working_dir=C:\Users\ADMIN\GNS3\do_an_PTTKHT\project-files\dynamips
+Jun 27 01:01:19.283 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\ADMIN\GNS3\do_an_PTTKHT\project-files\dynamips\141881a2-4e25-43f5-b18c-c8a88a6c8d28 
+Jun 27 01:01:19.283 GENERAL: working_dir=C:\Users\ADMIN\GNS3\do_an_PTTKHT\project-files\dynamips\141881a2-4e25-43f5-b18c-c8a88a6c8d28
+Jun 27 01:01:19.283 HYPERVISOR: exec_cmd: vm create ESW2 7 c3600 
+Jun 27 01:01:19.284 VM: VM ESW2 created.
+Jun 27 01:01:19.285 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW2 5007 
+Jun 27 01:01:19.285 HYPERVISOR: exec_cmd: c3600 get_mac_addr ESW2 
+Jun 27 01:01:19.286 HYPERVISOR: exec_cmd: vm set_disk0 ESW2 1 
+Jun 27 01:01:19.286 HYPERVISOR: exec_cmd: vm set_exec_area ESW2 64 
+Jun 27 01:01:19.286 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 27 01:01:19.286 HYPERVISOR: exec_cmd: vm set_idle_pc ESW2 0x605b90e0 
+Jun 27 01:01:19.287 HYPERVISOR: exec_cmd: vm set_ios ESW2 D:/GNS3/L3 Switch c3640-a3js-mz.124-23.image 
+Jun 27 01:01:19.288 HYPERVISOR: exec_cmd: c3600 set_mac_addr ESW2 cc07.1ae8.0000 
+Jun 27 01:01:19.288 HYPERVISOR: exec_cmd: vm set_nvram ESW2 256 
+Jun 27 01:01:19.288 HYPERVISOR: exec_cmd: vm set_ram ESW2 192 
+Jun 27 01:01:19.289 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 27 01:01:19.289 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 0 0 NM-1FE-TX 
+Jun 27 01:01:19.290 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 27 01:01:19.290 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 1 0 NM-1FE-TX 
+Jun 27 01:01:19.290 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 27 01:01:19.290 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 2 0 NM-16ESW 
+Jun 27 01:01:22.351 HYPERVISOR: exec_cmd: nio create_udp udp-318db7ae-d3f1-4f26-866d-16c3065cc31d 10042 127.0.0.1 10043 
+Jun 27 01:01:22.632 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 0 0 udp-318db7ae-d3f1-4f26-866d-16c3065cc31d 
+Jun 27 01:01:22.632 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 27 01:01:22.852 HYPERVISOR: exec_cmd: nio create_udp udp-eb145289-a58e-48f2-8a62-84ad3fa92558 10048 127.0.0.1 10049 
+Jun 27 01:01:22.859 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 0 udp-eb145289-a58e-48f2-8a62-84ad3fa92558 
+Jun 27 01:01:22.860 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 27 01:01:23.113 HYPERVISOR: exec_cmd: nio create_udp udp-1fd5efd2-a4f1-45aa-9f87-1b502db155a7 10058 127.0.0.1 10059 
+Jun 27 01:01:23.116 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 2 0 udp-1fd5efd2-a4f1-45aa-9f87-1b502db155a7 
+Jun 27 01:01:23.117 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 27 01:01:46.345 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Jun 27 01:01:46.396 VM: VM Ghost created.
+Jun 27 01:01:46.397 HYPERVISOR: exec_cmd: vm set_ios Ghost D:/GNS3/L3 Switch c3640-a3js-mz.124-23.image 
+Jun 27 01:01:46.398 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 27 01:01:46.399 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\ADMIN\GNS3\do_an_PTTKHT\project-files\dynamips\L3 Switch c3640-a3js-mz.124-23.image-192.ghost 
+Jun 27 01:01:46.399 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Jun 27 01:01:46.400 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 27 01:01:46.522 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jun 27 01:01:46.522 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 27 01:01:47.061 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 27 01:01:47.061 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 27 01:01:47.192 VM: VM Ghost shutdown.
+Jun 27 01:01:47.193 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jun 27 01:01:47.194 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 27 01:01:47.194 VM: VM Ghost destroyed.
+Jun 27 01:01:47.198 HYPERVISOR: exec_cmd: vm set_ghost_status ESW2 2 
+Jun 27 01:01:47.198 HYPERVISOR: exec_cmd: vm set_ghost_file ESW2 C:\Users\ADMIN\GNS3\do_an_PTTKHT\project-files\dynamips\L3 Switch c3640-a3js-mz.124-23.image-192.ghost 
+Jun 27 01:01:47.199 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 27 01:01:47.211 HYPERVISOR: exec_cmd: vm set_config ESW2 configs\i7_startup-config.cfg 
+Jun 27 01:01:47.212 HYPERVISOR: exec_cmd: vm start ESW2 
+Jun 27 01:26:17.418 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 27 01:26:17.434 HYPERVISOR: exec_cmd: vm stop ESW2 
+Jun 27 01:26:17.624 VM: VM ESW2 shutdown.
+Jun 27 01:26:17.624 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Jun 27 01:27:50.292 HYPERVISOR: exec_cmd: vm get_status ESW2 
+Jun 27 01:27:50.292 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+Jun 27 01:28:01.263 HYPERVISOR: Stopped.
+Jun 27 01:28:01.263 VM: VM ESW2 destroyed.
+Jun 27 01:28:01.268 GENERAL: reset done.

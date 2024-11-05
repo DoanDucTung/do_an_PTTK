@@ -1,0 +1,51 @@
+Jun 27 01:01:18.014 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 27 01:01:18.015 HYPERVISOR: Started on IP = 192.168.226.1, TCP port = 64777.
+Jun 27 01:01:18.511 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 27 01:01:18.512 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\ADMIN\GNS3\do_an_PTTKHT\project-files\dynamips 
+Jun 27 01:01:18.512 GENERAL: working_dir=C:\Users\ADMIN\GNS3\do_an_PTTKHT\project-files\dynamips
+Jun 27 01:01:18.512 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\ADMIN\GNS3\do_an_PTTKHT\project-files\dynamips\036bea7f-ca67-47a9-9afb-32fde6f0d11c 
+Jun 27 01:01:18.513 GENERAL: working_dir=C:\Users\ADMIN\GNS3\do_an_PTTKHT\project-files\dynamips\036bea7f-ca67-47a9-9afb-32fde6f0d11c
+Jun 27 01:01:18.514 HYPERVISOR: exec_cmd: vm create ESW1 6 c3600 
+Jun 27 01:01:18.515 VM: VM ESW1 created.
+Jun 27 01:01:18.516 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5005 
+Jun 27 01:01:18.516 HYPERVISOR: exec_cmd: c3600 get_mac_addr ESW1 
+Jun 27 01:01:18.516 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+Jun 27 01:01:18.517 HYPERVISOR: exec_cmd: vm set_exec_area ESW1 64 
+Jun 27 01:01:18.517 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 27 01:01:18.517 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x605b90e0 
+Jun 27 01:01:18.518 HYPERVISOR: exec_cmd: vm set_ios ESW1 D:/GNS3/L3 Switch c3640-a3js-mz.124-23.image 
+Jun 27 01:01:18.518 HYPERVISOR: exec_cmd: c3600 set_mac_addr ESW1 cc06.451c.0000 
+Jun 27 01:01:18.519 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+Jun 27 01:01:18.519 HYPERVISOR: exec_cmd: vm set_ram ESW1 192 
+Jun 27 01:01:18.520 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 27 01:01:18.520 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 0 0 NM-1FE-TX 
+Jun 27 01:01:18.521 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 27 01:01:18.521 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-1FE-TX 
+Jun 27 01:01:18.521 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 27 01:01:18.521 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 2 0 NM-16ESW 
+Jun 27 01:01:22.004 HYPERVISOR: exec_cmd: nio create_udp udp-d0fef141-4f4b-4c68-94ac-3cd95b8405fe 10036 127.0.0.1 10037 
+Jun 27 01:01:22.276 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 0 0 udp-d0fef141-4f4b-4c68-94ac-3cd95b8405fe 
+Jun 27 01:01:22.277 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 27 01:01:22.334 HYPERVISOR: exec_cmd: nio create_udp udp-f5add347-4d92-4905-8ea5-61cd2483e0f6 10040 127.0.0.1 10041 
+Jun 27 01:01:22.341 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 0 udp-f5add347-4d92-4905-8ea5-61cd2483e0f6 
+Jun 27 01:01:22.341 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 27 01:01:22.682 HYPERVISOR: exec_cmd: nio create_udp udp-ac0949e7-4385-4618-8fc6-e03c3f0fa17e 10045 127.0.0.1 10046 
+Jun 27 01:01:22.686 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 2 0 udp-ac0949e7-4385-4618-8fc6-e03c3f0fa17e 
+Jun 27 01:01:22.687 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 27 01:01:23.038 HYPERVISOR: exec_cmd: nio create_udp udp-d2365c6f-2a9b-4d06-bd43-06de7578975f 10052 127.0.0.1 10053 
+Jun 27 01:01:23.040 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 2 1 udp-d2365c6f-2a9b-4d06-bd43-06de7578975f 
+Jun 27 01:01:23.042 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 27 01:01:47.199 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Jun 27 01:01:47.212 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 C:\Users\ADMIN\GNS3\do_an_PTTKHT\project-files\dynamips\L3 Switch c3640-a3js-mz.124-23.image-192.ghost 
+Jun 27 01:01:47.212 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 27 01:01:47.224 HYPERVISOR: exec_cmd: vm set_config ESW1 configs\i6_startup-config.cfg 
+Jun 27 01:01:47.224 HYPERVISOR: exec_cmd: vm start ESW1 
+Jun 27 01:26:17.386 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 27 01:26:17.386 HYPERVISOR: exec_cmd: vm stop ESW1 
+Jun 27 01:26:17.593 VM: VM ESW1 shutdown.
+Jun 27 01:26:17.593 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 27 01:27:50.279 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Jun 27 01:27:50.284 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+Jun 27 01:28:01.265 HYPERVISOR: Stopped.
+Jun 27 01:28:01.265 VM: VM ESW1 destroyed.
+Jun 27 01:28:01.269 GENERAL: reset done.

@@ -1,0 +1,12 @@
+Jun 20 13:30:28.203 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 20 13:30:28.203 HYPERVISOR: Started on IP = 192.168.226.1, TCP port = 58595.
+Jun 20 13:30:28.712 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 20 13:30:28.712 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\ADMIN\GNS3\do_an_PTTKHT\project-files\dynamips 
+Jun 20 13:30:28.712 GENERAL: working_dir=C:\Users\ADMIN\GNS3\do_an_PTTKHT\project-files\dynamips
+Jun 20 13:30:28.713 HYPERVISOR: exec_cmd: ethsw create Switch3 
+Jun 20 13:30:33.056 HYPERVISOR: exec_cmd: nio create_udp udp-dc5dc34c-ce85-4631-9e62-2b93f1aadb82 10006 192.168.226.129 20000 
+Jun 20 13:30:33.057 HYPERVISOR: exec_cmd: ethsw add_nio Switch3 udp-dc5dc34c-ce85-4631-9e62-2b93f1aadb82 
+Jun 20 13:30:33.079 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-dc5dc34c-ce85-4631-9e62-2b93f1aadb82 1 
+Jun 20 13:30:33.312 HYPERVISOR: exec_cmd: nio create_udp udp-5a9ec251-24ab-42a5-8c20-a0e755493f20 10009 192.168.226.1 10010 
+Jun 20 13:30:33.312 HYPERVISOR: exec_cmd: ethsw add_nio Switch3 udp-5a9ec251-24ab-42a5-8c20-a0e755493f20 
+Jun 20 13:30:33.326 HYPERVISOR: exec_cmd: ethsw set_access_port Switch3 udp-5a9ec251-24ab-42a5-8c20-a0e755493f20 1 
